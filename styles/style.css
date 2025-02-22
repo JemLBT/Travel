@@ -83,12 +83,70 @@ main p {
   text-align: left;
   max-width: 450px;
 }
+
+img {
+  border-radius: 10px;
+}
+
+.secondary-section {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.secondary-section h2 {
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.secondary-section h4 {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.secondary-section h5 {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.secondary-section p {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.more-button {
+  background-color: #05214a;
+  color: white;
+  text-decoration: none;
+  padding: 15px 35px 15px 35px;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+.grid-3-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+
+  grid-gap: 20px;
+}
+.apres-1 {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+}
+
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("/media/footer.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  margin: 40px 0 40px 0;
 }
 
 footer h3 {
@@ -128,6 +186,11 @@ footer p {
 }
 
 @media (max-width: 900px) {
+  body {
+    text-align: center;
+    margin: 0 auto;
+  }
+
   header {
     padding: 60px 0;
   }
@@ -176,7 +239,6 @@ footer p {
   main p {
     font-weight: 100;
     font-size: 14px;
-
     text-align: center;
   }
   header a {
@@ -192,6 +254,15 @@ footer p {
     display: inline-block;
     margin-top: 22px;
     border-radius: 4px;
+  }
+  .secondary-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 10px;
+  }
+  .grid-3-columns {
+    grid-template-columns: 1fr;
   }
 
   footer h3 {
