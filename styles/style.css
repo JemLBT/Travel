@@ -21,8 +21,9 @@ header h1 {
 
 header h2 {
   font-weight: 400;
-  font-size: 40px;
+  font-size: 32px;
   line-height: 1.5;
+  letter-spacing: 1px;
   margin: 0;
 }
 header h3 {
@@ -53,6 +54,50 @@ header a {
   max-width: 1400px;
 }
 
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/media/footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+footer h3 {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+footer li {
+  font-weight: 100;
+  font-size: 12px;
+  color: white;
+  list-style: none;
+}
+footer ul {
+  padding: 0;
+}
+
+footer a {
+  font-weight: 100;
+  font-size: 12px;
+  color: white;
+  opacity: 0.7;
+}
+
+footer p {
+  font-weight: 100;
+  font-size: 12px;
+  color: white;
+  opacity: 0.7;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 30px;
+  padding: 30px;
+}
+
 @media (max-width: 900px) {
   header {
     padding: 60px 0;
@@ -60,19 +105,19 @@ header a {
 
   header h1 {
     font-weight: 200px;
-    font-size: 48px;
+    font-size: 42px;
     line-height: 1.5;
     margin: 0;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
   }
   header h2 {
-    font-weight: 300;
-    font-size: 20px;
+    font-weight: 200;
+    font-size: 18px;
     line-height: 1.5;
     margin: 0;
   }
   header h3 {
-    font-weight: 200;
+    font-weight: 400;
     font-size: 12px;
     line-height: 1.5;
     letter-spacing: 3px;
@@ -93,5 +138,41 @@ header a {
     display: inline-block;
     margin-top: 22px;
     border-radius: 4px;
+  }
+
+  footer h3 {
+    font-weight: 400;
+    font-size: 12px;
+    opacity: 0.7;
+  }
+
+  footer li {
+    font-weight: 100;
+    font-size: 10px;
+    color: white;
+    list-style: none;
+  }
+  footer ul {
+    padding: 0;
+  }
+
+  footer a {
+    font-weight: 100;
+    font-size: 10px;
+    color: white;
+    opacity: 0.7;
+  }
+
+  footer p {
+    font-weight: 100;
+    font-size: 10px;
+    color: white;
+    opacity: 0.7;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
   }
 }
