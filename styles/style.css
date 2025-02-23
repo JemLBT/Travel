@@ -65,6 +65,9 @@ header a {
 .lift {
   border-radius: 10px;
 }
+.map {
+  border-radius: 10px;
+}
 
 main {
   background-color: white;
@@ -127,13 +130,20 @@ img {
   text-transform: uppercase;
   border-radius: 10px;
 }
+
+.more-button:hover {
+  background-color: #325487;
+}
+
+.more-main-button:hover {
+  background-color: #ead11a;
+  color: white;
+}
 .grid-3-columns {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
-
-  grid-gap: 20px;
 }
+
 .apres-1 {
   background-color: white;
   padding: 40px;
@@ -183,6 +193,13 @@ footer p {
   grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 30px;
   padding: 30px;
+  width: 100%;
+}
+
+.soul-image {
+  width: 200px;
+  height: 200px;
+  text-align: left;
 }
 
 @media (max-width: 900px) {
