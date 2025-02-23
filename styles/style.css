@@ -280,12 +280,14 @@ footer p {
   }
   .grid-3-columns {
     grid-template-columns: 1fr;
+    text-align: center;
   }
 
   footer h3 {
     font-weight: 400;
     font-size: 12px;
     opacity: 0.7;
+    text-align: center;
   }
 
   footer li {
@@ -293,9 +295,11 @@ footer p {
     font-size: 10px;
     color: white;
     list-style: none;
+    text-align: center;
   }
   footer ul {
     padding: 0;
+    text-align: center;
   }
 
   footer a {
@@ -303,6 +307,7 @@ footer p {
     font-size: 10px;
     color: white;
     opacity: 0.7;
+    text-align: center;
   }
 
   footer p {
@@ -310,11 +315,13 @@ footer p {
     font-size: 10px;
     color: white;
     opacity: 0.7;
+    text-align: center;
   }
   .footer-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1px;
-    padding: 20px;
+    grid-template-columns: 350px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
   }
 }
